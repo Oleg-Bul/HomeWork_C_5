@@ -42,7 +42,7 @@ void ArithmeticMeanOfTheColumn(int[,]matrix)
     
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        int sum = 0;
+        double sum = 0;
         double aritMean = 0;
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
@@ -51,7 +51,7 @@ void ArithmeticMeanOfTheColumn(int[,]matrix)
         }
         aritMean = sum /(matrix.GetLength(1));
         Console.WriteLine(" Среднее арифметическое столбцa "+ (i+1)+":");
-        Console.WriteLine(" "+ aritMean);
+        Console.WriteLine(" "+ Math.Round(aritMean,1));
         
     }
 }
